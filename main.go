@@ -1,7 +1,7 @@
 //go:build linux
 
-// Package imuvectornav implements a component for a vectornav IMU.
-package imuvectornav
+// Package main implements a component for a vectornav IMU.
+package main
 
 import (
 	"context"
