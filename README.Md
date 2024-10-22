@@ -1,4 +1,4 @@
-# [`<INSERT MODULE NAME>` module](<INSERT LINK TO MODULE REPO>)
+# [`vectornav` module](<<https://app.viam.com/module/rand/vectornav>)
 
 This [module](https://docs.viam.com/registry/modular-resources/) implements the [`rdk:components:movement_sensor` API](https://docs.viam.com/components/movement-sensor/) in an <rand:vectornav:vn100-spi> model.
 With this model, you can integreate an IMU manufactured by [VectorNav](https://www.vectornav.com/products) that support SPI connection.
