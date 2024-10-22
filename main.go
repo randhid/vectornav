@@ -23,10 +23,13 @@ import (
 	"go.viam.com/rdk/utils"
 )
 
-var model = resource.DefaultModelFamily.WithModel("vn100-spi")
+var model = resource.NewModel("rand", "renogy", "vn100-spi")
 
 // defaultBaudRate is the value we assign if there is no value specified in the attributes.
-const defaultBaudRate = 9600
+const (
+	defaultBaudRate = 9600
+	defaultPollFreq = uint(200)
+)
 
 func main() {
 	module.ModularMain("vectornav", resource.APIModel{Model: model, API: movementsensor.API})
@@ -128,7 +131,7 @@ func newVectorNav(
 		baudRate = defaultBaudRate
 	}
 
-	pollFreq := uint(200)
+	pollFreq := defaultPollFreq
 	if newConf.Pfreq > 0 {
 		pollFreq = uint(newConf.Pfreq)
 	}
