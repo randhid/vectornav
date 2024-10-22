@@ -1,0 +1,21 @@
+{
+  "$schema": "https://dl.viam.dev/module.schema.json",
+  "module_id": "rand:vectornav",
+  "visibility": "public",
+  "url": "",
+  "description": "",
+  "models": [
+    {
+      "api": "rdk:component:movement_sensor",
+      "model": "rand:vectornav:vn100-spi"
+    }
+  ],
+  "entrypoint": "bin/vectornav",
+  "build": {
+    "build": "make --always-make module.tar.gz",
+    "arch": [
+      "linux/amd64",
+      "linux/arm64"
+    ]
+  }
+}
