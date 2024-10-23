@@ -47,7 +47,7 @@ type Config struct {
 func (cfg *Config) Validate(path string) ([]string, error) {
 	var deps []string
 	if cfg.SPI == "" {
-		return nil, resource.NewConfigValidationFieldRequiredError(path, "spi")
+		return nil, resource.NewConfigValidationFieldRequiredError(path, "spi_bus")
 	}
 
 	if cfg.CSPin == "" {
