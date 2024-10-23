@@ -23,7 +23,7 @@ import (
 	"go.viam.com/rdk/utils"
 )
 
-var model = resource.NewModel("rand", "renogy", "vn100-spi")
+var model = resource.NewModel("rand", "vectornav", "vn100-spi")
 
 // defaultBaudRate is the value we assign if there is no value specified in the attributes.
 const (
