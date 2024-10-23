@@ -5,13 +5,13 @@ UNAME_S ?= $(shell uname -s)
 
 build:
 	rm -f $(BIN_OUTPUT_PATH)/vectornav
-	go build $(LDFLAGS) -o $(BIN_OUTPUT_PATH)/vectornav main.go
+	go build -o $(BIN_OUTPUT_PATH)/vectornav main.go
 
 module.tar.gz: build
 	rm -f $(BIN_OUTPUT_PATH)/module.tar.gz
 	tar czf $(BIN_OUTPUT_PATH)/module.tar.gz $(BIN_OUTPUT_PATH)/vectornav meta.json
 
-vectorna: *.go 
+vectornav: *.go 
 	go build -o vectornav *.go
 
 clean:
