@@ -13,7 +13,7 @@
   "entrypoint": "bin/vectornav",
   "build": {
     "build": "make --always-make module.tar.gz",
-    "path": "bin/module.tar.gz",
+    "path": "module.tar.gz",
     "arch": [
       "linux/amd64",
       "linux/arm64"
