@@ -9,13 +9,13 @@ build:
 
 module.tar.gz: build
 	rm -f $(BIN_OUTPUT_PATH)/module.tar.gz
-	tar czf $(BIN_OUTPUT_PATH)/module.tar.gz $(BIN_OUTPUT_PATH)/vectornav meta.json
+	tar czf module.tar.gz $(BIN_OUTPUT_PATH)/vectornav meta.json
 
 vectornav: *.go 
 	go build -o vectornav *.go
 
 clean:
-	rm -rf $(BIN_OUTPUT_PATH)/vectornav $(BIN_OUTPUT_PATH)/module.tar.gz vectornav
+	rm -rf $(BIN_OUTPUT_PATH)/vectornav module.tar.gz vectornav
 
 gofmt:
 	gofmt -w -s .
