@@ -43,7 +43,7 @@ On the new component panel, copy and paste the following attribute template into
   ]
 ```
 
-### Attributes
+## Attributes
 
 The following attributes are available for `<rand:vectornav:vn100-spi>` <rdk:components:movement_sensor>s:
 

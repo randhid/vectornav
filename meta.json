@@ -7,7 +7,9 @@
   "models": [
     {
       "api": "rdk:component:movement_sensor",
-      "model": "rand:vectornav:vn100-spi"
+      "model": "rand:vectornav:vn100-spi",
+      "markdown_link": "README.md#Attributes",
+      "short_description": "A movement sensor component for the Vectornav IMU."
     }
   ],
   "entrypoint": "bin/vectornav",
